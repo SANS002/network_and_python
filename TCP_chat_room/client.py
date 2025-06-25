@@ -31,6 +31,8 @@ def write():
             client.close()
             break
 
+#accessing the functions in a separate thread
+
 receive_thread = threading.Thread(target=receive)
 receive_thread.start()
 
